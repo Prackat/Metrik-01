@@ -81,9 +81,14 @@ public class DrawCanvas extends Canvas {
         Graphics2D g2 = (Graphics2D) g;
         g2.setStroke(new BasicStroke(4));
 
+        if (this.circles.size() == 2) {
+            Point p1 = this.circles.get(0);
+            Point p2 = this.circles.get(1);
+
+            g.drawString("Distance: " + (int) p1.distance(p2), 20,540);
+        }
     }
-    public void setCircleSize(int circleSize) {
-        this.circleSize = circleSize;
-    }
+
+    public void setCircleSize(int circleSize) { this.circleSize = circleSize; }
 
 }
