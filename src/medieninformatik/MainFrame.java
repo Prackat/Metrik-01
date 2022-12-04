@@ -25,7 +25,7 @@ public class MainFrame extends Frame {
         // Frame
 
         //Aufruf des Constructors von Frame
-        super("Metrik 1.0");
+        super("Metrik 1.1.0");
 
         this.setLayout(null);
         this.setSize(800, 600);
@@ -40,7 +40,41 @@ public class MainFrame extends Frame {
         DrawCanvas c = new DrawCanvas(this.getWidth(), this.getHeight());
         this.add(c);
 
+        // Menu
+
+        MenuBar menuBar = new MenuBar();
+        setMenuBar(menuBar);
+
         // Background
-        setBackground(Color.lightGray);
+
+        Menu backgroundMenu = new Menu("Change Background");
+
+        MenuItem green = new MenuItem("Green");
+        MenuItem blue = new MenuItem("Blue");
+        MenuItem yellow = new MenuItem("Yellow");
+        MenuItem red = new MenuItem("Red");
+
+        backgroundMenu.add(green);
+        backgroundMenu.add(blue);
+        backgroundMenu.add(yellow);
+        backgroundMenu.add(red);
+
+        green.addActionListener(greenEvent -> {
+            c.setBackground(Color.GREEN);
+        });
+
+        blue.addActionListener(greenEvent -> {
+            c.setBackground(Color.BLUE);
+        });
+
+        yellow.addActionListener(greenEvent -> {
+            c.setBackground(Color.YELLOW);
+        });
+
+        red.addActionListener(greenEvent -> {
+            c.setBackground(Color.RED);
+        });
+
+        menuBar.add(backgroundMenu);
     }
 }
