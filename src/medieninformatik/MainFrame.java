@@ -25,7 +25,7 @@ public class MainFrame extends Frame {
         // Frame
 
         //Aufruf des Constructors von Frame
-        super("Metrik 1.0");
+        super("Metrik 1.0.1");
 
         this.setLayout(null);
         this.setSize(800, 600);
@@ -43,16 +43,6 @@ public class MainFrame extends Frame {
         // Background
         setBackground(Color.lightGray);
 
-        // Delete Circles
-
-        /**
-        Menu edit = new Menu("Edit");
-        MenuItem undo = new MenuItem("Undo");
-        undo.addActionListener(undoEvent -> {
-            c.popCircle();
-        });
-        edit.add(undo);
-         **/
 
     }
 }
