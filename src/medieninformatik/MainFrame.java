@@ -76,5 +76,18 @@ public class MainFrame extends Frame {
         });
 
         menuBar.add(backgroundMenu);
+
+        // Edit CircleSize
+        Menu edit = new Menu("Edit");
+
+        MenuItem circleSize = new MenuItem("Circle Size");
+
+        circleSize.addActionListener(circleEvent -> {
+            DialogueFrame dialogue = new DialogueFrame(c);
+        });
+
+        edit.add(circleSize);
+
+        menuBar.add(edit);
     }
 }

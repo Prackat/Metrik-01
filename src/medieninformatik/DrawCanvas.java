@@ -82,5 +82,8 @@ public class DrawCanvas extends Canvas {
         g2.setStroke(new BasicStroke(4));
 
     }
+    public void setCircleSize(int circleSize) {
+        this.circleSize = circleSize;
+    }
 
 }
