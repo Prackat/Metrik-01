@@ -71,12 +71,16 @@ public class DrawCanvas extends Canvas {
     }
 
     public void paint(Graphics g) {
+        int offset = 0;
         for (Point p : this.circles) {
             g.fillOval(p.x - circleSize / 2, p.y - circleSize / 2, circleSize, circleSize);
+            g.drawString("X: " + p.x + "  Y: " + p.y, 20, 60 + 20 * offset);
+            offset++;
         }
 
         Graphics2D g2 = (Graphics2D) g;
         g2.setStroke(new BasicStroke(4));
+
     }
 
 }
