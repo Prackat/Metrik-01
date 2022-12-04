@@ -42,17 +42,5 @@ public class MainFrame extends Frame {
 
         // Background
         setBackground(Color.lightGray);
-
-        // Delete Circles
-
-        /**
-        Menu edit = new Menu("Edit");
-        MenuItem undo = new MenuItem("Undo");
-        undo.addActionListener(undoEvent -> {
-            c.popCircle();
-        });
-        edit.add(undo);
-         **/
-
     }
 }
