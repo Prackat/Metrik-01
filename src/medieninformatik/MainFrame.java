@@ -25,7 +25,7 @@ public class MainFrame extends Frame {
         // Frame
 
         //Aufruf des Constructors von Frame
-        super("Metrik 1.2");
+        super("Metrik 1.3");
 
         this.setLayout(null);
         this.setSize(800, 600);
